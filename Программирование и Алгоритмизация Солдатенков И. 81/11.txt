@@ -1,0 +1,12 @@
+--Lua5.3 soldatenkov na 3-ku
+--3-----------------------------------------------
+
+n=tonumber(io.read())
+
+io.write('Ââåäèòå íîìåğ ìåñÿöà: ',n,'\n')
+io.write('Âğåìÿ ãîäà: ')
+
+if (n>2)and(n<6) then io.write('Âåñíà\n\n') else
+if (n>5)and(n<9) then io.write('Ëåòî\n\n') else
+if (n>8)and(n<12) then io.write('Îñåíü\n\n') else
+                       io.write('Çèìà\n\n') end end end

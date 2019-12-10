@@ -1,0 +1,22 @@
+--Lua5.3 soldatenkov na 3-ku
+--3-----------------------------------------------
+
+a=tonumber(io.read())
+b=tonumber(io.read())
+c=tonumber(io.read())
+d=tonumber(io.read())
+
+io.write('Введите 3 числа a, b и c ',a,' ',b,' ',c,'n')
+io.write('Введите число d ',d,'n');
+
+if (a==d) then io.write('a=d','nn') else
+if (b==d) then io.write('b=d','nn') else
+if (c==d) then io.write('c=d','nn') else
+            
+c1=d-a
+c2=d-b
+c3=d-c
+            
+if (c1c2)and(c1c3) then io.write('Максимальное d-a=',c1,'nn') else
+if (c2c1)and(c2c3) then io.write('Максимальное d-b=',c2,'nn') else
+if (c3c1)and(c3c2) then io.write('Максимальное d-c=',c3,'nn') end end end end end end

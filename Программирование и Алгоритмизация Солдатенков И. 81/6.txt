@@ -1,0 +1,27 @@
+﻿--Lua5.3 soldatenkov na 4-ku
+--3------------------------------------------
+x1=tonumber(io.read())
+y1=tonumber(io.read())
+a=tonumber(io.read())
+x0=tonumber(io.read())
+y0=tonumber(io.read())
+io.write('Левая нижняя координата начала квадрата XY: ',x1,' ',y1,'\n')
+io.write('Введите длину стороны: ',a,'\n')
+io.write('Введите координату точки XY: ',x0,' ',y0,'\n')
+if ((x0>=x1 and y0>=y1 and x0<=x1+a and y0<=y1+a)) then io.write('ВХОДИТ\n\n') else io.write('не ВХОДИТ\n\n') end;
+
+--4------------------------------------------
+x0=tonumber(io.read())
+y0=tonumber(io.read())
+rb=tonumber(io.read())
+rm=tonumber(io.read())
+x1=tonumber(io.read())
+y1=tonumber(io.read())
+io.write('Введите координаты центра оружностей XY: ',x0,' ',y0,'\n')
+io.write('Введите радиус внешней окружности(бублика): ',rb,'\n')
+io.write('Введите радиус внутренней окружности(дырки бублика): ',rm,'\n')
+io.write('Введите координату точки XY: ',x1,' ',y1,'\n')
+s=math.sqrt((x1-x0)*(x1-x0)+(y1-y0)*(y1-y0))
+if (s<rb) then 
+    if (s<rm) then io.write('ВХОДИТ в "дырку" бублика\n\n') else io.write('ВХОДИТ в сам бублик\n\n') end
+else io.write('ВЫХОДИТ за пределы бублика\n\n') end

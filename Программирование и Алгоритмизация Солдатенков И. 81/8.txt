@@ -1,0 +1,25 @@
+--Lua5.3 soldatenkov na 3-ku
+--3-----------------------------------------------
+v1=tonumber(io.read())
+v2=tonumber(io.read())
+a1=tonumber(io.read())
+a2=tonumber(io.read())
+s=tonumber(io.read())
+io.write('Введите скорости автомобилей: ',v1,' ',v2,'\n')
+io.write('Введите ускорения автомобилей: ',a1,' ',a2,'\n')
+io.write('Введите расстояние между автомобилями: ',s,'\n')
+
+a=(a1+a2)/2
+b=v1+v2
+c=-s
+d=b*b-4*a*c
+sq=math.sqrt(d)
+x1=(-b+sq)/(2*a)
+x2=(-b-sq)/(2*a)
+
+if x1>0 then
+t=x1
+io.write('Время встречи: ',x1,'\n') end
+if x2>0 then
+t=x1
+io.write('Время встречи: ',x2,'\n') end

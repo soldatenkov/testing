@@ -1,0 +1,13 @@
+--Lua5.3 soldatenkov na 3-ku
+--3-----------------------------------------------
+
+n=tonumber(io.read())
+
+io.write('Введите число: ',n,'\n')
+
+a=1
+for i=1,n do
+a=a*i
+end
+
+io.write('Факториал: ',n,'! = ',a,'\n\n')

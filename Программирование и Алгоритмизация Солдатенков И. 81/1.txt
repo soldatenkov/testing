@@ -1,0 +1,37 @@
+--Lua5.3 soldatenkov na 5-ku
+
+--3--------------------------------------------
+print(' Программа сложения')
+print('Введите два числа a,b')
+
+a=tonumber(io.read())
+b=tonumber(io.read())
+c=a+b
+
+io.write(a,'+',b,'=',c) 
+--4--------------------------------------------
+print('\n Cложение, вычитание, множение, деление')
+print('Введите два целых числа')
+
+a=tonumber(io.read())
+b=tonumber(io.read())
+
+c=a+b
+d=a-b
+e=a*b
+f=a/b
+
+io.write(a,'+',b,'=',c,'\n')
+io.write(a,'-',b,'=',d, '\n')
+io.write(a,'*',b,'=',e, '\n')
+io.write(a,'/',b,'=',f, '\n')
+--5--------------------------------------------
+print(' Программа вычисления синуса и косинуса')
+print('Введите угол в градусах')
+
+a=tonumber(io.read())
+ar=math.rad(a)
+sin=math.sin(ar)
+cos=math.cos(ar)
+io.write('sin=',sin, '\n')
+io.write('cos=',cos, '\n')

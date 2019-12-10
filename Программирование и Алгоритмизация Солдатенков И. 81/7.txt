@@ -1,0 +1,56 @@
+﻿--Lua5.3 soldatenkov na 5-ku
+--3-----------------------------------------------
+io.write('Тест по истории Российской Федерации\n')
+n=0
+io.write('1. Год принятия конституции РФ?\n')
+io.write('  1) 1991\n')
+io.write('  2) 1992\n')
+io.write('  3) 1993\n')
+io.write('  4) 1999\n')
+i1=io.read()
+io.write(i1)
+--5 для каждого ответа выводятся сообщения "Молодец" и "Плохо" в зависимости от ответа. Правильно-Молодец, не правильно-плохо.
+if (i1=='3') then n=n+1 io.write(' - Молодец\n\n') else io.write(' - Плохо\n\n') end
+
+io.write('2. Первый президент РФ?\n')
+io.write('  1) Горбачев М.С\n')
+io.write('  2) Ельцин Б.Н.\n')
+io.write('  3) Путин В.В.\n')
+io.write('  4) Медведев Д.А.\n')
+i2=io.read()
+io.write(i2)
+if (i2=='2') then n=n+1 io.write(' - Молодец\n\n') else io.write(' - Плохо\n\n') end
+
+io.write('3. Столица РФ?\n')
+io.write('  1) Москва\n')
+io.write('  2) Санкт-Петербург\n')
+io.write('  3) Псков\n')
+io.write('  4) Старая Ладога\n')
+i3=io.read()
+io.write(i3)
+if (i3=='1') then n=n+1 io.write(' - Молодец\n\n') else io.write(' - Плохо\n\n') end
+
+io.write('4. Население РФ?\n')
+io.write('  1) 1.3 млрд. человек\n')
+io.write('  2) 220 млн. человек\n')
+io.write('  3) 110 млн. человек\n')
+io.write('  4) 146 млн. человек\n')
+i4=io.read()
+io.write(i4)
+if (i4=='4') then n=n+1 io.write(' - Молодец\n\n') else io.write(' - Плохо\n\n') end
+
+io.write('Какой язык является государственным в РФ?\n')
+io.write('  1) Русский\n')
+io.write('  2) В России нет государственного языка\n')
+io.write('  3) Финский\n')
+io.write('  4) Английский\n')
+i5=io.read()
+io.write(i5)
+if (i5=='1') then n=n+1 io.write(' - Молодец\n\n') else io.write(' - Плохо\n\n') end
+
+io.write('Оценка: ',n,'\n')
+--4-----------------------------------------------
+if (n==5) then io.write('Отлично!') else 
+    if (n==4) then io.write('Хорошо') else
+        if (n==3) then io.write('Удовлетворительно') else
+            io.write('Неудовлитворительно') end end end
