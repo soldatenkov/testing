@@ -3,10 +3,10 @@
 
 n=tonumber(io.read())
 
-io.write('Ââåäèòå íîìåğ ìåñÿöà: ',n,'\n')
-io.write('Âğåìÿ ãîäà: ')
+io.write('Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ¼ĞµÑÑÑ†Ğ°: ',n,'\n')
+io.write('Ğ’Ñ€ĞµĞ¼Ñ Ğ³Ğ¾Ğ´Ğ°: ')
 
-if (n>2)and(n<6) then io.write('Âåñíà\n\n') else
-if (n>5)and(n<9) then io.write('Ëåòî\n\n') else
-if (n>8)and(n<12) then io.write('Îñåíü\n\n') else
-                       io.write('Çèìà\n\n') end end end
+if (n>2)and(n<6) then io.write('Ğ’ĞµÑĞ½Ğ°\n\n') else
+if (n>5)and(n<9) then io.write('Ğ›ĞµÑ‚Ğ¾\n\n') else
+if (n>8)and(n<12) then io.write('ĞÑĞµĞ½ÑŒ\n\n') else
+                       io.write('Ğ—Ğ¸Ğ¼Ğ°\n\n') end end end
