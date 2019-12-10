@@ -3,11 +3,11 @@
 
 n=tonumber(io.read())
 
-io.write('Введите число: ',n,'\n')
+io.write('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ',n,'\n')
 
 a=1
 for i=1,n do
 a=a*i
 end
 
-io.write('Факториал: ',n,'! = ',a,'\n\n')
+io.write('Р¤Р°РєС‚РѕСЂРёР°Р»: ',n,'! = ',a,'\n\n')
