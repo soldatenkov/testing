@@ -1,9 +1,0 @@
---Lua5.3 soldatenkov na 5-ku
-print('Программа вычисления синуса и косинуса')
-print('Введите угол в градусах')
-a=tonumber(io.read())
-ar=math.rad(a)
-sin=math.sin(ar)
-cos=math.cos(ar)
-io.write('sin=',sin, '\n')
-io.write('cos=',cos, '\n')
